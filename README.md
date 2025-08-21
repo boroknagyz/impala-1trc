@@ -11,3 +11,5 @@ One way to try out Apache Impala on the challenge is to download the original da
 ## Run the challenge
 You can find the SQL query of the challenge in part-1/query.sql.
 
+## Run the extended challenge
+After running part-1/data-generation.sql, you can run part-2/data-generation.sql to run the challenge on an Iceberg table with lots of delete records that need to be processed runtime. Data generation needs a larger cluster, or you can split up the insertion to the partitioned table to multiple insert statements.
